@@ -1,0 +1,28 @@
+name: CosmicGiveaways
+main: giveaways\Loader
+version: 0.0.1
+api: 4.0.0
+description: A Giveaway plugin for CosmicPvP
+authors:
+  - vaqle
+permissions:
+  giveaways.command:
+    default: op
+    description: Giveaways command
+  giveaways.nextcommand:
+    default: true
+    description: Next Giveaway command
+commands:
+  giveaways:
+    description: Giveaways command
+    usage: /giveaways
+    permission: giveaways.command
+    aliases:
+      - giveall
+      - giveaways
+    default: op
+  nextgiveaway:
+    description: Next Giveaway command
+    usage: /nextgiveaway
+    permission: giveaways.nextcommand
+    default: true
